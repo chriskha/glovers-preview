@@ -11,8 +11,10 @@
 // Class forward declaration
 @class CKGPColorSet;
 
-@interface CKGPColorStrobeView : UIView
+extern float const COLOR_STROBE_VIEW_WIDTH;
+extern float const COLOR_STROBE_VIEW_HEIGHT;
 
+@interface CKGPColorStrobeView : UIView
 
 @property (nonatomic) double strobeTime;
 @property (nonatomic) CKGPColorSet *colorSet;

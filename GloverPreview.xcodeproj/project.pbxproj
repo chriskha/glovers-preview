@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8E0E41A19D237B8007CC60E /* CKGPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0E41919D237B8007CC60E /* CKGPConstants.m */; };
 		E8E5FDBD19C7C13300CF53AC /* CKGPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E5FDBC19C7C13300CF53AC /* CKGPCollectionViewCell.xib */; };
 		E8F70EA519BEF5A900CEDA9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F70EA419BEF5A900CEDA9A /* Foundation.framework */; };
 		E8F70EA719BEF5A900CEDA9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F70EA619BEF5A900CEDA9A /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8E0E41819D237B8007CC60E /* CKGPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKGPConstants.h; sourceTree = "<group>"; };
+		E8E0E41919D237B8007CC60E /* CKGPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKGPConstants.m; sourceTree = "<group>"; };
 		E8E5FDBC19C7C13300CF53AC /* CKGPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKGPCollectionViewCell.xib; sourceTree = "<group>"; };
 		E8F70EA119BEF5A900CEDA9A /* GloverPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GloverPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F70EA419BEF5A900CEDA9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 				E8F70EDE19BFF4D300CEDA9A /* CKGPColorSet.m */,
 				E8F70EE019C05C7A00CEDA9A /* CKGPColorStrobeView.h */,
 				E8F70EE119C05C7A00CEDA9A /* CKGPColorStrobeView.m */,
+				E8E0E41819D237B8007CC60E /* CKGPConstants.h */,
+				E8E0E41919D237B8007CC60E /* CKGPConstants.m */,
 				E8F70ED319BEF67600CEDA9A /* CKGPViewController.h */,
 				E8F70ED419BEF67600CEDA9A /* CKGPViewController.m */,
 				E8F70ED519BEF67600CEDA9A /* CKGPViewController.xib */,
@@ -279,6 +284,7 @@
 				E8F70EB519BEF5A900CEDA9A /* CKAppDelegate.m in Sources */,
 				E8F70EDF19BFF4D300CEDA9A /* CKGPColorSet.m in Sources */,
 				E8F70EB119BEF5A900CEDA9A /* main.m in Sources */,
+				E8E0E41A19D237B8007CC60E /* CKGPConstants.m in Sources */,
 				E8F70EE219C05C7A00CEDA9A /* CKGPColorStrobeView.m in Sources */,
 				E8F70EDB19BF9B0C00CEDA9A /* CKGPColorPickerViewController.m in Sources */,
 			);

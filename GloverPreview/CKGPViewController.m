@@ -11,6 +11,8 @@
 #import "CKGPColorSet.h"
 #import "CKGPColorStrobeView.h"
 
+
+
 @interface CKGPViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *colorsCopyButton;
 @property (nonatomic, strong) NSMutableArray *colorViewsArray;
@@ -32,44 +34,42 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-//    NSThread *strobeThread = [[NSThread alloc] initWithTarget:self selector:@selector(doStrobe) object:nil];
-//    [strobeThread start];
-    
-//    UISwipeGestureRecognizer *swipeRightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(respondToSwipeGesture:)];
-//    swipeRightRecognizer.numberOfTouchesRequired = 1;
-//    swipeRightRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
-//    [self.view addGestureRecognizer:swipeRightRecognizer];
-//    
-//    UISwipeGestureRecognizer *swipeLeftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(respondToSwipeGesture:)];
-//    swipeLeftRecognizer.numberOfTouchesRequired = 1;
-//    swipeLeftRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-//    [self.view addGestureRecognizer:swipeLeftRecognizer];
 
     [self.colorsCopyButton setHidden:YES];
     
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat topOffset = (screenRect.size.height * .05);
+    CGFloat bottomOffset = (screenRect.size.height * .05);
+    CGFloat height = (screenRect.size.height * .15);
+    CGFloat x_position = (screenRect.size.width / 2) - (height / 2);
+    CGFloat circleOffset = (screenRect.size.height * .015);
+    CGFloat y_position = topOffset + circleOffset;
     
-    CGRect rect = CGRectMake(150, 50, 50, 50);
+    CGRect rect = CGRectMake(x_position, y_position, height, height);
     CKGPColorStrobeView *colorStrobeView = [[CKGPColorStrobeView alloc] initWithFrame:rect];
     [self.colorViewsArray addObject:colorStrobeView];
     [self.view addSubview:colorStrobeView];
     
-    rect = CGRectMake(150, 150, 50, 50);
+    y_position = y_position + (2*circleOffset) + height;
+    rect = CGRectMake(x_position, y_position, height, height);
     colorStrobeView = [[CKGPColorStrobeView alloc] initWithFrame:rect];
     [self.colorViewsArray addObject:colorStrobeView];
     [self.view addSubview:colorStrobeView];
     
-    rect = CGRectMake(150, 250, 50, 50);
+    y_position = y_position + (2*circleOffset) + height;
+    rect = CGRectMake(x_position, y_position, height, height);
     colorStrobeView = [[CKGPColorStrobeView alloc] initWithFrame:rect];
     [self.colorViewsArray addObject:colorStrobeView];
     [self.view addSubview:colorStrobeView];
     
-    rect = CGRectMake(150, 350, 50, 50);
+    y_position = y_position + (2*circleOffset) + height;
+    rect = CGRectMake(x_position, y_position, height, height);
     colorStrobeView = [[CKGPColorStrobeView alloc] initWithFrame:rect];
     [self.colorViewsArray addObject:colorStrobeView];
     [self.view addSubview:colorStrobeView];
-    
-    rect = CGRectMake(150, 450, 50, 50);
+
+    y_position = y_position + (2*circleOffset) + height;
+    rect = CGRectMake(x_position, y_position, height, height);
     colorStrobeView = [[CKGPColorStrobeView alloc] initWithFrame:rect];
     [self.colorViewsArray addObject:colorStrobeView];
     [self.view addSubview:colorStrobeView];
@@ -85,6 +85,7 @@
         NSTimeInterval timeInterval = ((CKGPColorStrobeView *)self.colorViewsArray[i]).strobeTime;
         NSTimer *strobeTimer =  [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self.colorViewsArray[i] selector:@selector(changeColor) userInfo:nil repeats:YES];
         [strobeTimer fire];
+//        [self.colorViewsArray[i] setBackgroundColor:[UIColor whiteColor]];
     }
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mainViewTapped)];
@@ -111,19 +112,6 @@
     
 }
 
-//- (void)respondToSwipeGesture:(UISwipeGestureRecognizer *)recognizer
-//{
-//    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-//        NSLog(@"Swiped Left");
-//        CKGPColorPickerViewController *colorPickerVC = [[CKGPColorPickerViewController alloc] init];
-//        [self presentViewController:colorPickerVC animated:YES completion:nil];
-//    } else if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
-//        NSLog(@"Swiped Right");
-//    }
-//}
-
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -140,9 +128,6 @@
 - (void)setNewColors:(NSArray *)colorsArray forView:(CKGPColorStrobeView *)view
 {
     [view.colorSet setWithColorArray:colorsArray];
-//    [view.colorSet setFirstColor:colorsArray[0]];
-//    [view.colorSet setSecondColor:colorsArray[1]];
-//    [view.colorSet setThirdColor:colorsArray[2]];
 }
 
 - (BOOL)prefersStatusBarHidden

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C3F88E2D-EA63-4C9B-A5B1-AA8A1E7815F7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GloverPreview</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>08A10319D469C6EB33DED6F78D74FA3A171EF7F6</key>
+		<string>https://github.com/chriskha/glovers-preview.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GloverPreview.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>08A10319D469C6EB33DED6F78D74FA3A171EF7F6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chriskha/glovers-preview.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>08A10319D469C6EB33DED6F78D74FA3A171EF7F6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>08A10319D469C6EB33DED6F78D74FA3A171EF7F6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GloverPreview</string>
+		</dict>
+	</array>
+</dict>
+</plist>

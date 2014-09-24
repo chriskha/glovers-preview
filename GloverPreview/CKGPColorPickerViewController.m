@@ -7,6 +7,7 @@
 //
 
 #import "CKGPColorPickerViewController.h"
+#import "CKGPConstants.h"
 
 @interface CKGPColorPickerViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
@@ -41,10 +42,11 @@
 //    CGFloat redValue, greenValue, blueValue = 0;
 //    [self.viewObjectToModify.colorSet.firstColor getRed:&redValue green:&greenValue blue:&blueValue alpha:nil];
     
-    self.allColorsNamesArray = @[ @"White", @"Blank", @"Red", @"Green", @"Blue",
-                                  @"Sky Blue", @"Light Blue", @"Silver", @"Mint",@"Off-White",
-                                  @"Purple", @"Lavendar", @"Hot Pink", @"Pink", @"Light Pink",
-                                  @"Blush", @"Orange", @"Yellow", @"Warm-White", @"Turquoise"];
+    self.allColorsNamesArray = @[COLOR_STRING_WHITE, COLOR_STRING_BLANK, COLOR_STRING_RED, COLOR_STRING_GREEN,
+                                 COLOR_STRING_BLUE, COLOR_STRING_SKYBLUE, COLOR_STRING_LIGHTBLUE, COLOR_STRING_SILVER,
+                                 COLOR_STRING_MINT, COLOR_STRING_OFFWHITE, COLOR_STRING_PURPLE, COLOR_STRING_LAVENDAR,
+                                 COLOR_STRING_HOTPINK, COLOR_STRING_PINK, COLOR_STRING_LIGHTPINK, COLOR_STRING_BLUSH,
+                                 COLOR_STRING_ORANGE, COLOR_STRING_YELLOW, COLOR_STRING_WARMWHITE, COLOR_STRING_TURQUOISE];
     
     self.allColorsArray = [[NSArray alloc] initWithObjects:
                        [UIColor whiteColor], // White
