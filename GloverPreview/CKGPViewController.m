@@ -39,7 +39,7 @@
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat topOffset = (screenRect.size.height * .05);
-    CGFloat bottomOffset = (screenRect.size.height * .05);
+//    CGFloat bottomOffset = (screenRect.size.height * .05);
     CGFloat height = (screenRect.size.height * .15);
     CGFloat x_position = (screenRect.size.width / 2) - (height / 2);
     CGFloat circleOffset = (screenRect.size.height * .015);
